@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\1.6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C272381-0133-455F-9723-B70A265BDB03}|1.6\\1.6.vcxproj|D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\1.6\\1.6\\Laboratory4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6C272381-0133-455F-9723-B70A265BDB03}|1.6\\1.6.vcxproj|solutionrelative:1.6\\Laboratory4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C272381-0133-455F-9723-B70A265BDB03}|1.6\\1.6.vcxproj|D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\1.6\\1.6\\Laborratory4CPP.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6C272381-0133-455F-9723-B70A265BDB03}|1.6\\1.6.vcxproj|solutionrelative:1.6\\Laborratory4CPP.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C272381-0133-455F-9723-B70A265BDB03}|1.6\\1.6.vcxproj|D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\1.6\\1.6\\LaboratoryH.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6C272381-0133-455F-9723-B70A265BDB03}|1.6\\1.6.vcxproj|solutionrelative:1.6\\LaboratoryH.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Laboratory4.cpp",
+              "DocumentMoniker": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\1.6\\1.6\\Laboratory4.cpp",
+              "RelativeDocumentMoniker": "1.6\\Laboratory4.cpp",
+              "ToolTip": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\1.6\\1.6\\Laboratory4.cpp",
+              "RelativeToolTip": "1.6\\Laboratory4.cpp",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-25T13:07:37.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Laborratory4CPP.cpp",
+              "DocumentMoniker": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\1.6\\1.6\\Laborratory4CPP.cpp",
+              "RelativeDocumentMoniker": "1.6\\Laborratory4CPP.cpp",
+              "ToolTip": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\1.6\\1.6\\Laborratory4CPP.cpp",
+              "RelativeToolTip": "1.6\\Laborratory4CPP.cpp",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAIAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-25T13:07:09.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LaboratoryH.h",
+              "DocumentMoniker": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\1.6\\1.6\\LaboratoryH.h",
+              "RelativeDocumentMoniker": "1.6\\LaboratoryH.h",
+              "ToolTip": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\1.6\\1.6\\LaboratoryH.h",
+              "RelativeToolTip": "1.6\\LaboratoryH.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-25T13:06:43.844Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
