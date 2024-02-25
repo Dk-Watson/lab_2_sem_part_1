@@ -43,7 +43,16 @@ int main() {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     // Создание объекта Student1 и сохранение его в файл
-    Student Student1("Alice", 20);
+    Student Student1;
+
+    string name;
+    int age;
+    cout << "Имя: ";
+    cin >> name;
+    cout << "Возраст: ";
+    cin >> age;
+
+    Student1 = Student(name, age);
     Student1.saveToFile("Student1.txt");
     // Создание объекта Student2 и загрузка данных из файла
     Student Student2;

@@ -26,7 +26,7 @@ public:
         : name(input_name), age(input_age), major(input_major), tuitionPaid(input_tuitionPaid), semester(input_semester) {}
 
     void display() {  // Вывод
-        cout << "Èìÿ: " << name << endl << " Âîçðàñò: " << age << endl << " Ñïåöèàëüíîñòü: " << major << endl << " Îïëàòà îáó÷åíèÿ: " << tuitionPaid << endl << " Ñåìåñòð: " << semester << endl;
+        cout << "Имя: " << name << endl << " Возраст: " << age << endl << " Специальность: " << major << endl << " Коммерция: " << tuitionPaid << endl << " Семестр: " << semester << endl;
     }
 
     void payTuition() {  // Метод оплаты

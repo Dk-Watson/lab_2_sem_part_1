@@ -47,7 +47,9 @@ int main() {
         }
 
         else {
-            Student NewElementStudArrRedux = { "Михаил" , 21 , "Строитель", 0, 4 }; // новый элемент
+            Student* Studvrem = new Student[size];
+            loadKeyboard(Studvrem, 1);
+            Student NewElementStudArrRedux = Studvrem[0]; // новый элемент
             int NewSize = size + 1;
 
             Student* StudArrRedux = new Student[NewSize]; // создание нового массива классов
@@ -103,7 +105,9 @@ int main() {
         }
 
         else {
-            Student NewElementStudArrRedux = { "Михаил", 21, "Строитель", 1, 4 }; // новый элемент
+            Student* Studvrem = new Student[size];
+            loadKeyboard (Studvrem, 1);
+            Student NewElementStudArrRedux = Studvrem[0]; // новый элемент
             int NewSize = size + 1;
 
             Student* StudArrRedux = new Student[NewSize];// создание нового массива 
