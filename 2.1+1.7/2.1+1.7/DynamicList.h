@@ -72,7 +72,7 @@ public:
 
         if (current->next == nullptr)
         {
-            cout << "Element not found" << endl;
+            cout << "Ёлемент не найден" << endl;
         }
         else
         {

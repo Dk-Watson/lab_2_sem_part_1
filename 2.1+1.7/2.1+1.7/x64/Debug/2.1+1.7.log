@@ -1,27 +1,2 @@
 ﻿  core.cpp
-  DynamicList.h
-D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\core.cpp(46,22): error C2664: "bool DynamicList<Student>::search(const T &)": невозможно преобразовать аргумент 1 из "std::string" в "const T &"
-D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\core.cpp(46,22): error C2664:         with
-D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\core.cpp(46,22): error C2664:         [
-D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\core.cpp(46,22): error C2664:             T=Student
-D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\core.cpp(46,22): error C2664:         ]
-      D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\core.cpp(46,29):
-      Причина: невозможно преобразовать "std::string" в "const T"
-          with
-          [
-              T=Student
-          ]
-      D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\core.cpp(46,29):
-      Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
-      D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\DynamicList.h(85,10):
-       см. объявление "DynamicList<Student>::search"
-      D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\core.cpp(46,22):
-      при попытке сопоставить список аргументов "(std::string)"
-  
-D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\core.cpp(56,37): error C2248: DynamicList<Student>::head: невозможно обратиться к private член, объявленному в классе "DynamicList<Student>"
-      D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\DynamicList.h(112,14):
-       см. объявление "DynamicList<Student>::head"
-      D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\DynamicList.h(18,7):
-       см. объявление "DynamicList<Student>"
-  
-  Создание кода...
+  2.1+1.7.vcxproj -> D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\x64\Debug\2.1+1.7.exe

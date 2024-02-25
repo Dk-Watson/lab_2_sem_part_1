@@ -2,19 +2,28 @@
 
 class Student{
 public:
-    string name;
-    int age;
+    string name;  // Имя
+    int age;  // Возраст
+    string major;  // Специальность
+    bool tuitionPaid;  // Коммерция или нет
+    int semester;  // Текущий семестр 
 
     friend ostream& operator<<(ostream& os, const Student& student){
-        os << "Name: " << student.name << ", Age: " << student.age;
+        os << "Имя: " << student.name << ", Возраст: " << student.age << ", Специальность: " << student.major << ", Коммерция: " << student.tuitionPaid << ", Семестр: " << student.semester;
         return os;
     }
 
     friend istream& operator>>(istream& is, Student& student){
-        cout << "Enter name: ";
+        cout << "Введи имя: ";
         is >> student.name;
-        cout << "Enter age: ";
+        cout << "Введи возраст: ";
         is >> student.age;
+        cout << "Введи специальность: ";
+        is >> student.major;
+        cout << "Коммерция или нет: ";
+        is >> student.tuitionPaid;
+        cout << "Введи текущий семестр: ";
+        is >> student.semester;
         return is;
     }
 };
@@ -25,13 +34,12 @@ int main(){
     SetConsoleOutputCP(1251);
     DynamicList<Student> studentsList;
 
-    cout << "Enter the number of students: ";
+    cout << "Количество студентов: ";
     int numStudents;
     cin >> numStudents;
 
-    for (int i = 0; i < numStudents; ++i)
-    {
-        cout << "Enter data for student " << i + 1 << ":" << endl;
+    for (int i = 0; i < numStudents; ++i){
+        cout << "Ввод информации о студенте " << i + 1 << ":" << endl;
         Student newStudent;
         cin >> newStudent;
         studentsList.insert(newStudent);
@@ -40,20 +48,18 @@ int main(){
     studentsList.saveToFile("students.txt");
 
     string searchName;
-    cout << "Enter the name of the student to search for: ";
+    cout << "Введите имя студента для поиска: ";
     cin >> searchName;
 
-    if (studentsList.search(searchName))
-    {
-        cout << searchName << " is in the list" << endl;
+    if (studentsList.search(searchName)){
+        cout << searchName << " Есть в списке" << endl;
     }
-    else
-    {
-        cout << searchName << " is not in the list" << endl;
+    else{
+        cout << searchName << " Нет в списке" << endl;
     }
 
-    cout << "Removing the first student from the list" << endl;
-    studentsList.remove(studentsList.head->data);
+    cout << "Удаление первого ученика из списка" << endl;
+    //studentsList.remove(studentsList.head->data);
 
     return 0;
 }
