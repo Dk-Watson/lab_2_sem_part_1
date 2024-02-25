@@ -15,15 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LaboratoryH.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Laborratory4CPP.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Laboratory4.cpp">
+    <ClCompile Include="core.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
