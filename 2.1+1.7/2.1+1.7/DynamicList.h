@@ -8,8 +8,7 @@
 using namespace std;
 
 template <class T>
-struct Node
-{
+struct Node{
     T data;
     Node* next;
 };
@@ -82,12 +81,12 @@ public:
         }
     }
 
-    bool search(const T& data)
+    bool search(const string& name)
     {
         Node<T>* current = head;
         while (current != nullptr)
         {
-            if (current->data == data)
+            if (current->data.name == name) 
             {
                 return true;
             }
@@ -96,8 +95,7 @@ public:
         return false;
     }
 
-    void saveToFile(const string& filename)
-    {
+    void saveToFile(const string& filename){
         ofstream file(filename);
         Node<T>* current = head;
         while (current != nullptr)
@@ -108,6 +106,17 @@ public:
         file.close();
     }
 
+    Node<T>* getHead() const{
+        return head;
+    }
+
+    void removeFirst(){
+        if (head != nullptr){
+            Node<T>* temp = head;
+            head = head->next;
+            delete temp;
+        }
+    }
 private:
     Node<T>* head;
 };

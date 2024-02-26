@@ -45,7 +45,6 @@ int main(){
         studentsList.insert(newStudent);
     }
 
-    studentsList.saveToFile("students.txt");
 
     string searchName;
     cout << "Введите имя студента для поиска: ";
@@ -59,7 +58,8 @@ int main(){
     }
 
     cout << "Удаление первого ученика из списка" << endl;
-    //studentsList.remove(studentsList.head->data);
+    studentsList.removeFirst();
 
+    studentsList.saveToFile("students.txt");
     return 0;
 }
