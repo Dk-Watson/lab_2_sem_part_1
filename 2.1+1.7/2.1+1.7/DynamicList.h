@@ -4,8 +4,37 @@
 #include <iostream>
 #include <fstream>
 #include <windows.h>
+#include <cassert>
 
 using namespace std;
+
+class Student { 
+public:
+    string name;  // Имя
+    int age;  // Возраст
+    string major;  // Специальность
+    bool tuitionPaid;  // Коммерция или нет
+    int semester;  // Текущий семестр 
+
+    friend ostream& operator<<(ostream& os, const Student& student) {
+        os << "Имя: " << student.name << ", Возраст: " << student.age << ", Специальность: " << student.major << ", Коммерция: " << student.tuitionPaid << ", Семестр: " << student.semester;
+        return os;
+    }
+
+    friend istream& operator>>(istream& is, Student& student) {
+        cout << "Введи имя: ";
+        is >> student.name;
+        cout << "Введи возраст: ";
+        is >> student.age;
+        cout << "Введи специальность: ";
+        is >> student.major;
+        cout << "Коммерция или нет: ";
+        is >> student.tuitionPaid;
+        cout << "Введи текущий семестр: ";
+        is >> student.semester;
+        return is;
+    }
+};
 
 template <class T>
 struct Node{
@@ -18,7 +47,7 @@ class DynamicList
 {
 public:
     DynamicList() : head(nullptr) {}
-    ~DynamicList()
+    ~DynamicList() 
     {
         Node<T>* current = head;
         while (current != nullptr)
@@ -29,7 +58,7 @@ public:
         }
     }
 
-    void insert(const T& data)
+    void insert(const T& data) // метод вноса в лист
     {
         Node<T>* newNode = new Node<T>{ data, nullptr };
         if (head == nullptr)
@@ -47,7 +76,7 @@ public:
         }
     }
 
-    void remove(const T& data)
+    void remove(const T& data) // метод удаления
     {
         if (head == nullptr)
         {
@@ -81,7 +110,7 @@ public:
         }
     }
 
-    bool search(const string& name)
+    bool search(const string& name) // метод поиска 
     {
         Node<T>* current = head;
         while (current != nullptr)
@@ -95,7 +124,7 @@ public:
         return false;
     }
 
-    void saveToFile(const string& filename){
+    void saveToFile(const string& filename){ // метод сохранения в файл
         ofstream file(filename);
         Node<T>* current = head;
         while (current != nullptr)
@@ -106,17 +135,25 @@ public:
         file.close();
     }
 
-    Node<T>* getHead() const{
+    Node<T>* getHead() const{ // возвращение "головы"
         return head;
     }
 
-    void removeFirst(){
+    bool removeFirst(){ // удаление первого
         if (head != nullptr){
             Node<T>* temp = head;
             head = head->next;
             delete temp;
         }
     }
+
+    bool testInsert() { // тест метода поиска
+        DynamicList<Student> studentsList;
+        Student s1 = { "Дмитрий", 20, "Инженер", 1, 2 };
+        studentsList.insert(s1);
+        return assert(studentsList.search("Дмитрий") == true);
+    }
+
 private:
     Node<T>* head;
 };
