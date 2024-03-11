@@ -147,11 +147,12 @@ public:
         }
     }
 
-    void testInsert(){
+    bool testInsert() {
         DynamicList<Student> studentsList;
         Student s1 = { "ƒмитрий", 20, "»нженер", 1, 2 };
         studentsList.insert(s1);
-        assert(studentsList.search("ƒмитрий") == true);
+        bool n = studentsList.search("ƒмитрий");
+        return n;
     }
 
 private:

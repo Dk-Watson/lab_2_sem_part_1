@@ -42,9 +42,10 @@ int main(){
 
     else { // тестирование метода поиска 
         DynamicList<Student> testList;
-        testList.testInsert(); // Вызовите метод без необходимости проверки возвращаемого значения
+        bool n;
+        n = testList.testInsert();
 
-        if (testList.search("Дмитрий")) {
+        if (n == true) {
             cout << "Тестирование поиска завершено успешно" << endl;
         }
         else {
