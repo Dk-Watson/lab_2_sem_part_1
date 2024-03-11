@@ -139,7 +139,7 @@ public:
         return head;
     }
 
-    bool removeFirst(){ // удаление первого
+    void removeFirst(){ // удаление первого
         if (head != nullptr){
             Node<T>* temp = head;
             head = head->next;
@@ -147,11 +147,11 @@ public:
         }
     }
 
-    bool testInsert() { // тест метода поиска
+    void testInsert(){
         DynamicList<Student> studentsList;
         Student s1 = { "Дмитрий", 20, "Инженер", 1, 2 };
         studentsList.insert(s1);
-        return assert(studentsList.search("Дмитрий") == true);
+        assert(studentsList.search("Дмитрий") == true);
     }
 
 private:

@@ -1,18 +1,2 @@
 ﻿  core.cpp
-D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\DynamicList.h(162,16): error C2440: return: невозможно преобразовать "void" в "bool"
-  (компиляция исходного файла "core.cpp")
-      D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\DynamicList.h(162,16):
-      Выражение, имеющее тип void, нельзя преобразовать в другой тип
-      D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\DynamicList.h(162,16):
-      контекст создания экземпляра шаблона (сначала самый старый)
-          D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\DynamicList.h(46,7):
-          при компиляции шаблона класса "DynamicList"
-          D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\DynamicList.h(151,30):
-          выполняется компиляция ссылки на экземпляр класс шаблон функции "DynamicList<Student>"
-          D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\DynamicList.h(157,10):
-          во время компиляции функции-члена класс шаблон "bool DynamicList<Student>::testRemove(void)"
-              D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\2.1+1.7\core.cpp(51,9):
-              см. первую ссылку на DynamicList<Student>::testRemove "main"
-  
-  DynamicList.h
-  Создание кода...
+  2.1+1.7.vcxproj -> D:\lab's_\Laxno\lab_2_sem_part_1\2.1+1.7\x64\Debug\2.1+1.7.exe
