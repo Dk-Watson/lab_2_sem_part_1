@@ -22,7 +22,11 @@ public:
             file.close();
             cout << "Сохранено в файл: " << filename << endl;
         }
+        if (file.fail()) {
+            cout << "Ошибка при записи в файл: " << filename << endl;
+        }
     }
+
     // Метод для загрузки данных из файла
     void loadFromFile(string filename) {
         ifstream file(filename);
