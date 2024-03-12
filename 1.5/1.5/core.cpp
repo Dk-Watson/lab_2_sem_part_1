@@ -67,24 +67,22 @@ int main() {
     }
 
     if (choice_1 == 2) {
-        Student* StudArr = new Student[size];
+        Student** StudArrPtr = new Student * [size];
         cout << " ак заполнить массив указателей? 1 - из файла 2 - ручной ввод: ";
         cin >> choice_2;
 
         if (choice_2 == 1) {
-            loadFromFile(StudArr, size); // заполнение с файла
+            loadFromFile(*StudArrPtr, size); // заполнение с файла
         }
 
         else {
-            loadKeyboard(StudArr, size); // заполнение с клавиатуры
-
+            loadKeyboard(*StudArrPtr, size); // заполнение с клавиатуры
         }
 
-        Student** StudArrPtr = new Student * [size]; // создание массива указателей классов
+        /*Student** StudArrPtr = new Student * [size]; // создание массива указателей классов
         for (int i = 0; i < size; i++) {
             StudArrPtr[i] = &StudArr[i];
-        }
-
+        }*/
         cout << "ћассив объектов:" << endl;
         printArray(*StudArrPtr, size);// вывод 
 
@@ -112,7 +110,7 @@ int main() {
 
             Student* StudArrRedux = new Student[NewSize];// создание нового массива 
             for (int i = 0; i < size; i++) {
-                StudArrRedux[i] = StudArr[i];
+                StudArrRedux[i] = *StudArrPtr[i];
             }
 
             StudArrRedux[size] = NewElementStudArrRedux; // присвоение нового значени€ последнему элементу 

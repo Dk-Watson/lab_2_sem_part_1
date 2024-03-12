@@ -45,7 +45,7 @@ int main(){
         bool n;
         n = testList.testInsert();
 
-        if (n == true) {
+        if (n) {
             cout << "“естирование поиска завершено успешно" << endl;
         }
         else {

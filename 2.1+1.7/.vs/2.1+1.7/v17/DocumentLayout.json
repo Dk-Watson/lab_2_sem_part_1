@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.1\u002B1.7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4A3D0E2-4C25-4DBE-9A16-710761379584}|2.1\u002B1.7\\2.1\u002B1.7.vcxproj|D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.1\u002B1.7\\2.1\u002B1.7\\DynamicList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4A3D0E2-4C25-4DBE-9A16-710761379584}|2.1\u002B1.7\\2.1\u002B1.7.vcxproj|solutionrelative:2.1\u002B1.7\\DynamicList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D4A3D0E2-4C25-4DBE-9A16-710761379584}|2.1\u002B1.7\\2.1\u002B1.7.vcxproj|D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.1\u002B1.7\\2.1\u002B1.7\\core.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D4A3D0E2-4C25-4DBE-9A16-710761379584}|2.1\u002B1.7\\2.1\u002B1.7.vcxproj|solutionrelative:2.1\u002B1.7\\core.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4A3D0E2-4C25-4DBE-9A16-710761379584}|2.1\u002B1.7\\2.1\u002B1.7.vcxproj|D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.1\u002B1.7\\2.1\u002B1.7\\DynamicList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4A3D0E2-4C25-4DBE-9A16-710761379584}|2.1\u002B1.7\\2.1\u002B1.7.vcxproj|solutionrelative:2.1\u002B1.7\\DynamicList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,24 +18,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "core.cpp",
               "DocumentMoniker": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.1\u002B1.7\\2.1\u002B1.7\\core.cpp",
               "RelativeDocumentMoniker": "2.1\u002B1.7\\core.cpp",
               "ToolTip": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.1\u002B1.7\\2.1\u002B1.7\\core.cpp",
               "RelativeToolTip": "2.1\u002B1.7\\core.cpp",
-              "ViewState": "AQIAABkAAAAAAAAAAAAAwC8AAAAVAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAwC8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-02-25T16:08:12.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DynamicList.h",
               "DocumentMoniker": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.1\u002B1.7\\2.1\u002B1.7\\DynamicList.h",
               "RelativeDocumentMoniker": "2.1\u002B1.7\\DynamicList.h",
