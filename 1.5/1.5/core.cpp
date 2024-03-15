@@ -67,22 +67,22 @@ int main() {
     }
 
     if (choice_1 == 2) {
-        Student** StudArrPtr = new Student * [size];
-        cout << "Как заполнить массив указателей? 1 - из файла 2 - ручной ввод: ";
+        Student* StudArr = new Student[size]; //создание массива классов
+        cout << "Как заполнить массив объектов? 1 - из файла 2 - ручной ввод: ";
         cin >> choice_2;
 
         if (choice_2 == 1) {
-            loadFromFile(*StudArrPtr, size); // заполнение с файла
+            loadFromFile(StudArr, size); // заполнение с файла
         }
 
         else {
-            loadKeyboard(*StudArrPtr, size); // заполнение с клавиатуры
+            loadKeyboard(StudArr, size); // заполнение с клавиатуры
         }
 
-        /*Student** StudArrPtr = new Student * [size]; // создание массива указателей классов
+        Student** StudArrPtr = new Student * [size]; // создание массива указателей классов
         for (int i = 0; i < size; i++) {
             StudArrPtr[i] = &StudArr[i];
-        }*/
+        }
         cout << "Массив объектов:" << endl;
         printArray(*StudArrPtr, size);// вывод 
 
@@ -98,8 +98,8 @@ int main() {
 
             cout << "Массив объектов после удаления: " << endl;
 
-            printArray(*StudArrPtr, size); // вывод
-            saveToFile(*StudArrPtr, size); // сохранение в файл
+            displayArray(StudArrPtr, size); // вывод
+            saveArrayToFile(StudArrPtr, size, "students.txt"); // сохранение в файл
         }
 
         else {
@@ -108,17 +108,17 @@ int main() {
             Student NewElementStudArrRedux = Studvrem[0]; // новый элемент
             int NewSize = size + 1;
 
-            Student* StudArrRedux = new Student[NewSize];// создание нового массива 
+            Student** StudArrRedux = new Student * [NewSize]; // создание массива указателей классов
             for (int i = 0; i < size; i++) {
-                StudArrRedux[i] = *StudArrPtr[i];
+                StudArrPtr[i] = &StudArr[i];
             }
 
-            StudArrRedux[size] = NewElementStudArrRedux; // присвоение нового значения последнему элементу 
+            StudArrRedux[size] = &NewElementStudArrRedux; // присвоение нового значения последнему элементу 
 
             cout << "Массив объектов после добавления: " << endl;
 
-            printArray(StudArrRedux, NewSize);// вывод
-            saveToFile(StudArrRedux, NewSize);// сохранение в файл
+            displayArray(StudArrPtr, size); // вывод
+            saveArrayToFile(StudArrRedux, size, "students.txt"); // сохранение в файл
         }
     }
     return 0;

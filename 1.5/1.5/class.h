@@ -33,7 +33,7 @@ public:
         tuitionPaid = true;
     }
 
-    void advanceSemester() {  // Перевод на новй семестр
+    void advanceSemester() {  // Перевод на новый семестр
         semester++;
     }
 
@@ -92,4 +92,38 @@ void saveToFile(Student arr[], int size) {  // Сохранение в файл
         file << arr[i].name << " " << arr[i].age << " " << arr[i].major << " " << arr[i].tuitionPaid << " " << arr[i].semester << endl;
     }
     file.close();
+}
+
+void saveArrayToFile(Student* arr[], int size, string filename) {
+    ofstream file(filename);
+    if (file.is_open()) {
+        for (int i = 0; i < size; i++) {
+            file << arr[i]->name << " " << arr[i]->age << arr[i]->major << arr[i]->tuitionPaid << arr[i]->semester << endl;
+        }
+        file.close();
+        cout << "Сохранено в файл: " << filename << endl;
+    }
+    else {
+        cout << "Ошибка при открытии файла для записи" << endl;
+    }
+}
+
+void loadArrayFromFile(Student* arr[], int size, string filename) {
+    ifstream file(filename);
+    if (file.is_open()) {
+        for (int i = 0; i < size; i++) {
+            file >> arr[i]->name >> arr[i]->age >> arr[i]->major >> arr[i]->tuitionPaid >> arr[i]->semester;
+        }
+        file.close();
+        cout << "Загружено из файла: " << filename << endl;
+    }
+    else {
+        cout << "Ошибка при открытии файла для загрузки" << endl;
+    }
+}
+
+void displayArray(Student* arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        arr[i]->display();
+    }
 }

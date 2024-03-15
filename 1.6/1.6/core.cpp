@@ -20,10 +20,6 @@ public:
             // Запись данных в файл
             file << name << " " << age << endl;
             file.close();
-            cout << "Сохранено в файл: " << filename << endl;
-        }
-        if (file.fail()) {
-            cout << "Ошибка при записи в файл: " << filename << endl;
         }
     }
 
@@ -35,7 +31,6 @@ public:
             // Чтение данных из файла
             file >> name >> age;
             file.close();
-            cout << "Загружено из файла: " << filename << endl;
         }
     }
     // Метод для отображения данных
@@ -58,10 +53,19 @@ int main() {
 
     Student1 = Student(name, age);
     Student1.saveToFile("Student1.txt");
+
+    cout << "Проверка записанных данных:" << endl;
+    
     // Создание объекта Student2 и загрузка данных из файла
     Student Student2;
     Student2.loadFromFile("Student1.txt");
-    // Отображение данных объекта Student2
-    Student2.display();
+
+    if (Student1.name == Student2.name) {
+        if (Student1.age == Student2.age) {
+            cout << ("В файл все записалось верно");
+        }
+
+    }
+
     return 0;
 }
