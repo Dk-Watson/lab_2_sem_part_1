@@ -83,6 +83,7 @@ int main() {
         for (int i = 0; i < size; i++) {
             StudArrPtr[i] = &StudArr[i];
         }
+
         cout << "Массив объектов:" << endl;
         printArray(*StudArrPtr, size);// вывод 
 
