@@ -77,7 +77,7 @@ int main() {
             cout << "2 - Возраст" << endl;
             cout << "3 - Специальность" << endl;
             cout << "4 - Семестр" << endl;
-            cout << "5 - Тип обучение" << endl;
+            cout << "5 - Тип обучения" << endl;
             cin >> rename;
 
             if (rename == 1) {
@@ -93,7 +93,7 @@ int main() {
 
             if (rename == 2) {
                 int newAge;
-                cout << "Введите новую специальность" << endl;
+                cout << "Введите новый возраст" << endl;
                 cin >> newAge;
                 for (auto& s : students) {
                     if (s.name == nameToEdit) {
@@ -115,7 +115,7 @@ int main() {
 
             if (rename == 4) {
                 int newSemester;
-                cout << "Введите новую специальность" << endl;
+                cout << "Введите новый семестр" << endl;
                 cin >> newSemester;
                 for (auto& s : students) {
                     if (s.name == nameToEdit) {
@@ -126,7 +126,7 @@ int main() {
 
             if (rename == 5) {
                 bool newTuitionPaid;
-                cout << "Введите новую специальность" << endl;
+                cout << "Обновите тип обучения" << endl;
                 cin >> newTuitionPaid;
                 for (auto& s : students) {
                     if (s.name == nameToEdit) {
