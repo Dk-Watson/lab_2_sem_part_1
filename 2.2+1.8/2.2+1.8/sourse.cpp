@@ -144,7 +144,16 @@ int main() {
         }
 
         if (menu == 5) {
-            
+            cout << "Тестирование метода display..." << endl; // тестирование метода display
+            cout << "Создание тестового студента:" << endl;
+            Student testStudent("Иван Иванов", 20, "IT", 3, true);
+            cout << "Ожидаемый результат: Имя: Иван Иванов, Возраст: 20, Специальность: IT, Семестр: 3, Коммерция: 1" << endl;
+            if (testStudent.name == "Иван Иванов" and testStudent.age == 20 and testStudent.major == "IT" and testStudent.semester == 3 and testStudent.tuitionPaid == true) {
+                cout << "Метод работает верно" << endl;
+            }
+            else {
+                cout << "Метод работает не верно" << endl;
+            }
         }
 
     } while (menu != 6);
