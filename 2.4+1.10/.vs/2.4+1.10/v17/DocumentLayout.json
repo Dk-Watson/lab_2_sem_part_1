@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DEB99953-2D58-4E15-AB5C-3952BC30CFBE}|UnitTestProject1\\UnitTestProject1.csproj|d:\\lab\u0027s_\\laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\unittestproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEB99953-2D58-4E15-AB5C-3952BC30CFBE}|UnitTestProject1\\UnitTestProject1.csproj|solutionrelative:unittestproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51099090-B40A-46DE-954C-3C101346A44A}|2.4\u002B1.10\\2.4\u002B1.10.csproj|D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\2.4\u002B1.10\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51099090-B40A-46DE-954C-3C101346A44A}|2.4\u002B1.10\\2.4\u002B1.10.csproj|solutionrelative:2.4\u002B1.10\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51099090-B40A-46DE-954C-3C101346A44A}|2.4\u002B1.10\\2.4\u002B1.10.csproj|D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\2.4\u002B1.10\\iofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51099090-B40A-46DE-954C-3C101346A44A}|2.4\u002B1.10\\2.4\u002B1.10.csproj|solutionrelative:2.4\u002B1.10\\iofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51099090-B40A-46DE-954C-3C101346A44A}|2.4\u002B1.10\\2.4\u002B1.10.csproj|D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\2.4\u002B1.10\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51099090-B40A-46DE-954C-3C101346A44A}|2.4\u002B1.10\\2.4\u002B1.10.csproj|solutionrelative:2.4\u002B1.10\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51099090-B40A-46DE-954C-3C101346A44A}|2.4\u002B1.10\\2.4\u002B1.10.csproj|D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\2.4\u002B1.10\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{51099090-B40A-46DE-954C-3C101346A44A}|2.4\u002B1.10\\2.4\u002B1.10.csproj|solutionrelative:2.4\u002B1.10\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\UnitTestProject1\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "UnitTestProject1\\UnitTest1.cs",
+              "ToolTip": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\UnitTestProject1\\UnitTest1.cs",
+              "RelativeToolTip": "UnitTestProject1\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAwBMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T15:41:48.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "core.cs",
+              "DocumentMoniker": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\2.4\u002B1.10\\core.cs",
+              "RelativeDocumentMoniker": "2.4\u002B1.10\\core.cs",
+              "ToolTip": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\2.4\u002B1.10\\core.cs",
+              "RelativeToolTip": "2.4\u002B1.10\\core.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAYwG0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T18:06:46.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IOFile.cs",
+              "DocumentMoniker": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\2.4\u002B1.10\\IOFile.cs",
+              "RelativeDocumentMoniker": "2.4\u002B1.10\\IOFile.cs",
+              "ToolTip": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\2.4\u002B1.10\\IOFile.cs",
+              "RelativeToolTip": "2.4\u002B1.10\\IOFile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T18:05:32.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\2.4\u002B1.10\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "2.4\u002B1.10\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\2.4\u002B1.10\\MainWindow.xaml.cs",
+              "RelativeToolTip": "2.4\u002B1.10\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T18:03:01.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\2.4\u002B1.10\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "2.4\u002B1.10\\MainWindow.xaml",
+              "ToolTip": "D:\\lab\u0027s_\\Laxno\\lab_2_sem_part_1\\2.4\u002B1.10\\2.4\u002B1.10\\MainWindow.xaml",
+              "RelativeToolTip": "2.4\u002B1.10\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-01T18:03:02.357Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

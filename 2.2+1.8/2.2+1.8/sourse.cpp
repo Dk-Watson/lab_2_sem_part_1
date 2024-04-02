@@ -14,9 +14,21 @@ public:
     int semester;  // Текущий семестр 
 
     Student(string n, int a, string m, int s, bool t) : name(n), age(a), major(m), semester(s), tuitionPaid(t){}
+   
+    Student();
 
     void display() const {
         cout << "Имя: " << name << ", Возраст: " << age << ", Специальность: " << major << ", Семестр: " << semester << ", Коммерция: " << tuitionPaid << endl;
+    }
+
+    void testDisplay(Student testStudent) const {
+        cout << "Ожидаемый результат: Имя: Иван Иванов, Возраст: 20, Специальность: IT, Семестр: 3, Коммерция: 1" << endl;
+        if (testStudent.name == "Иван Иванов" and testStudent.age == 20 and testStudent.major == "IT" and testStudent.semester == 3 and testStudent.tuitionPaid == true) {
+            cout << "Метод работает верно" << endl;
+        }
+        else {
+            cout << "Метод работает не верно" << endl;
+        }
     }
 };
 
@@ -58,14 +70,7 @@ int main() {
             cout << "Введите имя какого студента удалить" << endl;
             cin >> nameToDelete;
 
-            for (auto it = students.begin(); it != students.end(); ) {
-                if (it->name == nameToDelete) {
-                    it = students.erase(it);
-                }
-                else {
-                    ++it;
-                }
-            }
+            
         }
 
         if (menu == 3) {
@@ -147,13 +152,7 @@ int main() {
             cout << "Тестирование метода display..." << endl; // тестирование метода display
             cout << "Создание тестового студента:" << endl;
             Student testStudent("Иван Иванов", 20, "IT", 3, true);
-            cout << "Ожидаемый результат: Имя: Иван Иванов, Возраст: 20, Специальность: IT, Семестр: 3, Коммерция: 1" << endl;
-            if (testStudent.name == "Иван Иванов" and testStudent.age == 20 and testStudent.major == "IT" and testStudent.semester == 3 and testStudent.tuitionPaid == true) {
-                cout << "Метод работает верно" << endl;
-            }
-            else {
-                cout << "Метод работает не верно" << endl;
-            }
+            testStudent.testDisplay(testStudent);
         }
 
     } while (menu != 6);
