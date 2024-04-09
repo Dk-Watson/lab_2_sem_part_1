@@ -104,8 +104,8 @@ int main() {
         if (menu == 2) {
             cout << "Введите имя какого студента удалить" << endl;
             cin >> nameToDelete;
-            auto it = find_if(students.begin(), students.end(), [nameToDelete](const ExtendedStudent& student) {
-                return student.name == nameToDelete;
+            auto it = find_if(students.begin(), students.end(), [studentIDToEdit](const ExtendedStudent& student) {
+                return student.studentID == studentIDToEdit;
                 });
 
             // Если студент найден - удаляем
