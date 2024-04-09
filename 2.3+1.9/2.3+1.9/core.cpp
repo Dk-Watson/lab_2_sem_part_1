@@ -23,10 +23,10 @@ public:
 class ExtendedStudent : public Student {
 public:
     string address;
-    int studentID;
+    string studentID;
     string email;
 
-    ExtendedStudent(string n, int a, string m, int s, bool t, string addr, int id, string e) : Student(n, a, m, s, t), address(addr), studentID(id), email(e) {}
+    ExtendedStudent(string n, int a, string m, int s, bool t, string addr, string id, string e) : Student(n, a, m, s, t), address(addr), studentID(id), email(e) {}
 
     void displayExtendedInfo() const {
         cout << " Адрес: " << address << ", ID студента: " << studentID << ", Email: " << email << endl;
@@ -52,8 +52,8 @@ int main() {
     list<ExtendedStudent> students;
     // Добавление, удаление, редактирование и вывод объектов можно осуществить также, как в предыдущем примере, используя методы STL.
     // Пример:
-    int menu, age, semester, rename, studentID;
-    string nameToDelete, nameToEdit, name, major, email, address;
+    int menu, age, semester, rename;
+    string nameToDelete, studentIDToEdit, name, major, email, address, studentID;
     bool tuitionPaid;
 
     do {
@@ -68,23 +68,37 @@ int main() {
         cin >> menu;
 
         if (menu == 1) {
-            cout << "Введите Имя студента" << endl;
-            cin >> name;
-            cout << "Введите возраст студента" << endl;
-            cin >> age;
-            cout << "Введите название специальности" << endl;
-            cin >> major;
-            cout << "Введите текущий семестр" << endl;
-            cin >> semester;
-            cout << "Обучение на коммерции?" << endl;
-            cin >> tuitionPaid;
-            cout << "Введите адрес" << endl;
-            cin >> address;
+            bool tuitionPaid;
             cout << "Введите айди студента" << endl;
             cin >> studentID;
-            cout << "Введите адрес почты" << endl;
-            cin >> email;
-            students.push_back(ExtendedStudent(name, age, major, semester, tuitionPaid, address, studentID, email));
+            bool isDuplicate = false;
+            for (const ExtendedStudent& student : students) {
+                if (student.studentID == studentID) {
+                isDuplicate = true;
+                    break;
+                }
+            }
+            if (isDuplicate) {
+                cout << "Студент с таким ID уже существует. Пожалуйста, введите другой ID." << endl;
+            }
+            else {
+                cout << "Введите Имя студента" << endl;
+                cin >> name;
+                cout << "Введите возраст студента" << endl;
+                cin >> age;
+                cout << "Введите название специальности" << endl;
+                cin >> major;
+                cout << "Введите текущий семестр" << endl;
+                cin >> semester;
+                cout << "Обучение на коммерции?" << endl;
+                cin >> tuitionPaid;
+                cout << "Введите адрес" << endl;
+                cin >> address;
+                cout << "Введите адрес почты" << endl;
+                cin >> email;
+                students.push_back(ExtendedStudent(name, age, major, semester, tuitionPaid, address, studentID, email));
+                cout << "Студент успешно добавлен." << endl;
+            }
         }
 
         if (menu == 2) {
@@ -106,7 +120,7 @@ int main() {
 
         if (menu == 3) {
             cout << "Введите какого студента отредактировать" << endl;
-            cin >> nameToEdit;
+            cin >> studentIDToEdit;
 
             cout << "Что изменить" << endl;
             cout << "1 - Имя" << endl;
@@ -119,8 +133,8 @@ int main() {
             cout << "8 - Почту" << endl;
             cin >> rename;
 
-            auto it = find_if(students.begin(), students.end(), [nameToEdit](const ExtendedStudent& student) {
-                return student.name == nameToEdit;
+            auto it = find_if(students.begin(), students.end(), [studentIDToEdit](const ExtendedStudent& student) {
+                return student.studentID == studentIDToEdit;
                 });
 
             if (rename == 1) {
@@ -166,7 +180,7 @@ int main() {
             }
 
             if (rename == 7) {
-                int newStudentID;
+                string newStudentID;
                 cout << "Введите новый StudentID" << endl;
                 cin >> newStudentID;
                 it->studentID = newStudentID;
@@ -211,11 +225,11 @@ int main() {
             }
 
             // Тестирование класса ExtendedStudent
-            ExtendedStudent student2("Петров", 22, "Физика", 4, false, "Адрес1", 12345, "petrov@example.com");
+            ExtendedStudent student2("Петров", 22, "Физика", 4, false, "Адрес1", "12345", "petrov@example.com");
 
             // Тестирование метода displayExtendedInfo класса ExtendedStudent
             if (student2.name == "Петров" and student2.age == 22 and student2.major == "Физика" and student2.semester == 4 and student2.tuitionPaid == false
-                and student2.address == "Адрес1" and student2.studentID == 12345 and student2.email == "petrov@example.com") {
+                and student2.address == "Адрес1" and student2.studentID == "12345" and student2.email == "petrov@example.com") {
                 cout << "Метод display класса ExtendedStudent работает верно " << endl;
             }
 
